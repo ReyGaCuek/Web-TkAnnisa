@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  /* background-color: aliceblue; */
+  background-image: url('./assets/Background2.jpg'); 
+  background-attachment: fixed;           
+  background-size: cover;                 
+  background-position: center;         
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: #f3f4f6;
+}
