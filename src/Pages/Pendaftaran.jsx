@@ -86,9 +86,9 @@ const Pendaftaran = () => {
     },
     {
       id: 4,
-      title: "Daftar Ulang",
+      title: "Pembayaran",
       description:
-        "Melakukan pembayaran dan melengkapi administrasi pendaftaran",
+        "Silahkan melakukan pembayaran dan melengkapi administrasi pendaftaran langsung ke sekolah",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
