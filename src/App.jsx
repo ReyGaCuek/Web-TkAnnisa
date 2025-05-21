@@ -10,8 +10,8 @@ import {
 } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import NotFound from "./Pages/NotFound";
-import Album from "./Pages/Album";
 import FormPendaftaran from "./Pages/FormPendaftaran";
+import Galeri from "./Pages/Galeri";
 
 // import './App.css'
 
@@ -22,7 +22,7 @@ function App() {
         <Route index element={<Beranda />} />
         <Route path="pendaftaran" element={<Pendaftaran />} />
         <Route path="form-pendaftaran" element={<FormPendaftaran />} />
-        <Route path="album" element={<Album />} />
+        <Route path="galeri" element={<Galeri />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )

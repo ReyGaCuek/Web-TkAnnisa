@@ -40,10 +40,10 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
               Beranda
             </NavLink>
             <NavLink
-              to={"/album"}
+              to={"/galeri"}
               className="text-white hover:text-stone-400 transition-colors"
             >
-              Album Kami
+              Galeri
             </NavLink>
             <NavLink
               to={"/pendaftaran"}

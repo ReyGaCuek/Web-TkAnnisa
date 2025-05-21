@@ -26,10 +26,10 @@ const Beranda = () => {
                 Daftar Sekarang
               </NavLink>
               <NavLink
-                to={"/album"}
+                to={"/galeri"}
                 className="bg-white/10 hover:bg-white/20 border border-white text-white py-3 px-6 rounded-lg font-medium transition"
               >
-                Album Kami
+                Galeri
               </NavLink>
             </div>
           </div>

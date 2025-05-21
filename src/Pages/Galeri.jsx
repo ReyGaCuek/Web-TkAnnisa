@@ -7,7 +7,7 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 
-const Album = () => {
+const Galeri = () => {
   const albums = [
     {
       id: 1,
@@ -190,4 +190,4 @@ const Album = () => {
   );
 };
 
-export default Album;
+export default Galeri;
