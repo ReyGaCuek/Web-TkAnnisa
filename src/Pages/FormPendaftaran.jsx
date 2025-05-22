@@ -27,8 +27,9 @@ const FormPendaftaran = () => {
     e.preventDefault();
     console.log("Data pendaftaran:", formData);
     // Tambahkan logika submit ke API atau penyimpanan data
-    alert("Pendaftaran berhasil dikirim!");
-    alert("Silahkan ikuti petunjuk untuk pendaftaran selanjutnya");
+    alert(
+      "Pendaftaran berhasil dikirim!\nSilahkan ikuti petunjuk untuk pendaftaran selanjutnya"
+    );
     navigate("/pendaftaran");
   };
   return (
