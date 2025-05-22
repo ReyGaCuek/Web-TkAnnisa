@@ -1,55 +1,55 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
-import image1 from '/public/1.png';
-import image2 from '/public/2.png';
-import image3 from '/public/3.png';
-import image4 from '/public/4.png';
-import image5 from '/public/5.png';
-import image6 from '/public/6.png';
-import image7 from '/public/7.png';
-import image8 from '/public/8.png';
+import React from "react";
+import { useState, useEffect } from "react";
+import image1 from "/1.png";
+import image2 from "/2.png";
+import image3 from "/3.png";
+import image4 from "/4.png";
+import image5 from "/5.png";
+import image6 from "/6.png";
+import image7 from "/7.png";
+import image8 from "/8.png";
 
 const ImageSlider = () => {
-const images = [
+  const images = [
     {
       url: image1,
       alt: "Image 1",
       title: "",
-      description: ""
+      description: "",
     },
     {
       url: image5,
       alt: "Image 5",
       title: "",
-      description: ""
+      description: "",
     },
     {
       url: image3,
       alt: "Image 3",
       title: "",
-      description: ""
+      description: "",
     },
     {
       url: image4,
       alt: "Image 4",
       title: "",
-      description: ""
-    }
+      description: "",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
-  
+
   // Auto slide effect
   useEffect(() => {
     let interval;
-    
+
     if (isPlaying) {
       interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
       }, 3000); // Change slide every 3 seconds
     }
-    
+
     return () => {
       if (interval) {
         clearInterval(interval);
@@ -63,7 +63,9 @@ const images = [
   };
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
   };
 
   const goToNext = () => {
@@ -83,7 +85,7 @@ const images = [
             <div
               key={index}
               className={`absolute w-full h-full transition-opacity duration-1000 ${
-                index === currentIndex ? 'opacity-100' : 'opacity-0'
+                index === currentIndex ? "opacity-100" : "opacity-0"
               }`}
             >
               <img
@@ -128,14 +130,14 @@ const images = [
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full ${
-                index === currentIndex ? 'bg-white' : 'bg-gray-400'
+                index === currentIndex ? "bg-white" : "bg-gray-400"
               }`}
             />
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ImageSlider
+export default ImageSlider;

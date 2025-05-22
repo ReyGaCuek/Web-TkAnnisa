@@ -1,14 +1,14 @@
 import React from "react";
 import { useState } from "react";
-import image1 from "/public/1.png";
-import image2 from "/public/2.png";
-import image3 from "/public/3.png";
-import image4 from "/public/4.png";
-import image5 from "/public/5.png";
-import image6 from "/public/6.png";
-import image7 from "/public/7.png";
-import image8 from "/public/8.png";
-import image9 from "/public/9.png";
+import image1 from "/1.png";
+import image2 from "/2.png";
+import image3 from "/3.png";
+import image4 from "/4.png";
+import image5 from "/5.png";
+import image6 from "/6.png";
+import image7 from "/7.png";
+import image8 from "/8.png";
+import image9 from "/9.png";
 import {
   FaSearch,
   FaTimes,
@@ -81,7 +81,6 @@ const Galeri = () => {
       count: 24,
       date: "15 Maret 2023",
     },
-    
   ];
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -162,8 +161,7 @@ const Galeri = () => {
                       {album.title}
                     </h3>
                     <p className="text-white/80 text-sm">
-                      {/* {album.count} foto  */}
-                      • {album.date}
+                      {/* {album.count} foto  */}• {album.date}
                     </p>
                   </div>
                 </div>
