@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import logo from "../assets/logo11.svg";
+import logo from "../assets/logo2.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = ({ menuOpen, setMenuOpen }) => {
@@ -19,6 +19,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             className="font-mono text-xl font-bold text-white flex gap-3 items-center"
           >
             <img
+            className="w-10 h-10"
               src={logo} // Ganti dengan path/logo kamu
               alt="Logo"
               // className="w-8 h-8" // Ukuran logo (responsif dan proporsional)

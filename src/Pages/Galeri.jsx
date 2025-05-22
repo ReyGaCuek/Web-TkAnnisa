@@ -1,5 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import image1 from "/public/1.png";
+import image2 from "/public/2.png";
+import image3 from "/public/3.png";
+import image4 from "/public/4.png";
+import image5 from "/public/5.png";
+import image6 from "/public/6.png";
+import image7 from "/public/7.png";
+import image8 from "/public/8.png";
+import image9 from "/public/9.png";
 import {
   FaSearch,
   FaTimes,
@@ -12,45 +21,67 @@ const Galeri = () => {
     {
       id: 1,
       title: "Kegiatan Belajar",
-      cover: "/albums/learning.jpg", // Ganti dengan path gambar Anda
+      cover: image1, // Ganti dengan path gambar Anda
       count: 24,
       date: "15 Maret 2023",
     },
     {
-      id: 2,
-      title: "Field Trip",
-      cover: "/albums/fieldtrip.jpg", // Ganti dengan path gambar Anda
-      count: 32,
-      date: "2 April 2023",
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image2, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
     },
     {
-      id: 3,
-      title: "Pentas Seni",
-      cover: "/albums/performance.jpg", // Ganti dengan path gambar Anda
-      count: 45,
-      date: "17 Mei 2023",
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image3, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
     },
     {
-      id: 4,
-      title: "Hari Kemerdekaan",
-      cover: "/albums/independence.jpg", // Ganti dengan path gambar Anda
-      count: 28,
-      date: "17 Agustus 2023",
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image4, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
     },
     {
-      id: 5,
-      title: "Kegiatan Outdoor",
-      cover: "/albums/outdoor.jpg", // Ganti dengan path gambar Anda
-      count: 18,
-      date: "10 September 2023",
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image5, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
     },
     {
-      id: 6,
-      title: "Peringatan Hari Anak",
-      cover: "/albums/children-day.jpg", // Ganti dengan path gambar Anda
-      count: 36,
-      date: "23 Juli 2023",
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image6, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
     },
+    {
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image7, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
+    },
+    {
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image8, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
+    },
+    {
+      id: 1,
+      title: "Kegiatan Belajar",
+      cover: image9, // Ganti dengan path gambar Anda
+      count: 24,
+      date: "15 Maret 2023",
+    },
+    
   ];
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -93,9 +124,9 @@ const Galeri = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">
-            Galeri Kegiatan TK An-Nisa
+            Galeri Kegiatan <br /> TK An-Nisa
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
             Dokumentasi momen-momen seru dan berharga di TK kami
           </p>
         </div>
@@ -131,25 +162,26 @@ const Galeri = () => {
                       {album.title}
                     </h3>
                     <p className="text-white/80 text-sm">
-                      {album.count} foto • {album.date}
+                      {/* {album.count} foto  */}
+                      • {album.date}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-4">
+              {/* <div className="p-4">
                 <button
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition"
                   onClick={() => openLightbox(0)} // Contoh, bisa disesuaikan
                 >
                   Lihat Album
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
 
         {/* Lightbox */}
-        {lightboxOpen && (
+        {/* {lightboxOpen && (
           <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
             <button
               onClick={closeLightbox}
@@ -184,7 +216,7 @@ const Galeri = () => {
               <FaChevronRight size={32} />
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </section>
   );
