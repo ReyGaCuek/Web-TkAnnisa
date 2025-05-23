@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const FormPendaftaran = () => {
   const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -25,13 +28,54 @@ const FormPendaftaran = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Data pendaftaran:", formData);
-    // Tambahkan logika submit ke API atau penyimpanan data
-    alert(
-      "Pendaftaran berhasil dikirim!\nSilahkan ikuti petunjuk untuk pendaftaran selanjutnya"
-    );
-    navigate("/pendaftaran");
+    setIsSubmitting(true);
+
+    // template ID, service ID, dan public key Anda dari EmailJS
+    const templateParams = {
+      to_name: formData.parentName,
+      child_name: formData.fullName,
+      birth_date: formData.birthDate,
+      gender: formData.gender === "L" ? "Laki-laki" : "Perempuan",
+      phone: formData.phoneNumber,
+      email: formData.email,
+      address: formData.address,
+    };
+
+    // console.log("SERVICE:", import.meta.env.VITE_SERVICE_ID);
+    // console.log("TEMPLATE:", import.meta.env.VITE_TEMPLATE_ID);
+    // console.log("KEY:", import.meta.env.VITE_PUBLIC_KEY);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email berhasil dikirim!",
+            response.status,
+            response.text
+          );
+          setSubmitSuccess(true);
+          setIsSubmitting(false);
+          alert(
+            "Pendaftaran berhasil dikirim!\nSilahkan cek email Anda untuk informasi selanjutnya."
+          );
+          navigate("/pendaftaran");
+        },
+        (error) => {
+          console.log("Gagal mengirim email:", error);
+          setIsSubmitting(false);
+          alert(
+            "Terjadi kesalahan saat mengirim formulir. Silahkan coba lagi nanti."
+          );
+        }
+      );
   };
+
   return (
     <div className="min-h-screen bg-gray-50/70 py-21">
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden">
@@ -147,9 +191,12 @@ const FormPendaftaran = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition"
+            disabled={isSubmitting}
+            className={`w-full ${
+              isSubmitting ? "bg-blue-400" : "bg-blue-600 hover:bg-blue-700"
+            } text-white font-bold py-3 px-4 rounded-lg transition`}
           >
-            Daftarkan Sekarang
+            {isSubmitting ? "Mengirim..." : "Daftarkan Sekarang"}
           </button>
         </form>
       </div>
