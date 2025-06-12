@@ -19,28 +19,28 @@ const Galeri = () => {
   const albums = [
     {
       id: 1,
-      title: "Manasik Haji",
+      title: "Kegiatan Manasik Haji",
       cover: image1, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
     },
     {
       id: 1,
-      title: "Melukis",
+      title: "Kegiatan Melukis",
       cover: image2, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
     },
     {
       id: 1,
-      title: "Field Trip",
+      title: "Kegiatan Field Trip",
       cover: image3, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
     },
     {
       id: 1,
-      title: "Literasi Pagi",
+      title: "Kegiatan Literasi Pagi",
       cover: image4, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
@@ -68,14 +68,14 @@ const Galeri = () => {
     },
     {
       id: 1,
-      title: "Praktek Sholat",
+      title: "Kegiatan Praktek Sholat",
       cover: image8, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
     },
     {
       id: 1,
-      title: "Foto Bersama Wali Murid",
+      title: "Kegiatan Foto Bersama Wali Murid",
       cover: image9, // Ganti dengan path gambar Anda
       count: 24,
       date: "",
