@@ -4,7 +4,6 @@ import image1 from "/1.png";
 import image2 from "/2.png";
 import image3 from "/3.png";
 import image4 from "/4.png";
-import image5 from "/5.png";
 import image6 from "/6.png";
 import image7 from "/7.png";
 import image8 from "/8.png";
@@ -20,66 +19,66 @@ const Galeri = () => {
   const albums = [
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Manasik Haji",
       cover: image1, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Melukis",
       cover: image2, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Field Trip",
       cover: image3, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Literasi Pagi",
       cover: image4, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
+    // {
+    //   id: 1,
+    //   title: "Kegiatan Belajar Mengajar",
+    //   cover: image5, // Ganti dengan path gambar Anda
+    //   count: 24,
+    //   date: "",
+    // },
     {
       id: 1,
-      title: "Kegiatan Belajar",
-      cover: image5, // Ganti dengan path gambar Anda
-      count: 24,
-      date: "15 Maret 2023",
-    },
-    {
-      id: 1,
-      title: "Kegiatan Belajar",
+      title: "Kegiatan Memperingati Maulid Nabi",
       cover: image6, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Kegiatan Belajar Mengajar",
       cover: image7, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Praktek Sholat",
       cover: image8, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
     {
       id: 1,
-      title: "Kegiatan Belajar",
+      title: "Foto Bersama Wali Murid",
       cover: image9, // Ganti dengan path gambar Anda
       count: 24,
-      date: "15 Maret 2023",
+      date: "",
     },
   ];
 

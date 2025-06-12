@@ -34,7 +34,7 @@ const Pendaftaran = () => {
       id: 2,
       title: "Berkas Dokumen",
       description:
-        "Datang ke sekolah dengan mempersiapkan: fotokopi akta kelahiran, KK, pas foto 3x4, dan surat keterangan sehat",
+        "Datang ke sekolah dengan mempersiapkan: fotokopi akta kelahiran, KK, pas foto 3x4, dan fotokopi KTP orang tua.",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -62,30 +62,30 @@ const Pendaftaran = () => {
     //     </svg>
     //   )
     // },
+    // {
+    //   id: 3,
+    //   title: "Pengumuman",
+    //   description:
+    //     "Hasil seleksi akan diumumkan melalui Whatsapp dalam 3 hari kerja",
+    //   icon: (
+    //     <svg
+    //       xmlns="http://www.w3.org/2000/svg"
+    //       className="h-10 w-10"
+    //       fill="none"
+    //       viewBox="0 0 24 24"
+    //       stroke="currentColor"
+    //     >
+    //       <path
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //         strokeWidth={2}
+    //         d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+    //       />
+    //     </svg>
+    //   ),
+    // },
     {
       id: 3,
-      title: "Pengumuman",
-      description:
-        "Hasil seleksi akan diumumkan melalui Whatsapp dalam 3 hari kerja",
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-10 w-10"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
-          />
-        </svg>
-      ),
-    },
-    {
-      id: 4,
       title: "Pembayaran",
       description:
         "Silahkan melakukan pembayaran dan melengkapi administrasi pendaftaran langsung ke sekolah",
@@ -369,9 +369,26 @@ const Pendaftaran = () => {
                 />
               </svg>
               <span>
-                Pendaftaran dibuka setiap hari Senin-Jumat pukul 08.00-14.00 WIB
+                Pendaftaran dibuka setiap hari Senin-Jumat pukul 08.00-12.00,
+                16.00-17.00 WIB
               </span>
             </li>
+            {/* <li className="flex items-start">
+              <svg
+                className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Biaya formulir pendaftaran sebesar Rp 150.000</span>
+            </li> */}
             <li className="flex items-start">
               <svg
                 className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0"
@@ -386,26 +403,7 @@ const Pendaftaran = () => {
                   d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <span>
-                Biaya pendaftaran sebesar Rp 150.000 (tidak termasuk seragam dan
-                buku)
-              </span>
-            </li>
-            <li className="flex items-start">
-              <svg
-                className="h-5 w-5 text-blue-600 mr-2 mt-1 flex-shrink-0"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <span>Kuota terbatas untuk 30 siswa per tahun ajaran</span>
+              <span>Kuota terbatas per tahun ajaran</span>
             </li>
           </ul>
         </div>

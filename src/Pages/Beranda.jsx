@@ -42,18 +42,23 @@ const Beranda = () => {
             Pendaftaran Murid Baru
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            Tahun Ajaran 2023/2024 sudah dibuka! Daftarkan putra/putri Anda
+            Tahun Ajaran 2025/2026 sudah dibuka! Daftarkan putra/putri Anda
             sekarang.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
+                title: "Kelompok Usia",
+                items: ["KB: 3-4 Tahun", "TK-A: 4-5 Tahun", "TK-B: 5-6 Tahun"],
+              },
+              {
                 title: "Persyaratan",
                 items: [
-                  "Usia 4-6 tahun",
+                  "Mengisi formulir pendaftaran",
                   "Fotokopi akta kelahiran",
                   "Fotokopi KK",
+                  "Fotokopi KTP Orang Tua",
                   "Pas foto 3x4",
                 ],
               },
@@ -61,20 +66,21 @@ const Beranda = () => {
                 title: "Waktu Pendaftaran",
                 items: [
                   "Senin-Jumat",
-                  "08.00 - 14.00 WIB",
-                  "Gelombang I: 1-15 Juni",
-                  "Gelombang II: 16-30 Juni",
+                  "08.00 - 12.00 WIB",
+                  "16.00 - 17.00 WIB",
+                  // "Gelombang I: 1-15 Juni",
+                  // "Gelombang II: 16-30 Juni",
                 ],
               },
-              {
-                title: "Biaya Pendidikan",
-                items: [
-                  "Uang pangkal: Rp 2.000.000",
-                  "SPP bulanan: Rp 500.000",
-                  "Seragam: Rp 350.000",
-                  "Diskon 10% pendaftaran gelombang I",
-                ],
-              },
+              // {
+              //   title: "Biaya Pendidikan",
+              //   items: [
+              //     "Uang pangkal: Rp 2.000.000",
+              //     "SPP bulanan: Rp 500.000",
+              //     "Seragam: Rp 350.000",
+              //     "Diskon 10% pendaftaran gelombang I",
+              //   ],
+              // },
             ].map((item, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow">
                 <h3 className="text-xl font-bold text-purple-700 mb-4">
@@ -143,9 +149,9 @@ const Beranda = () => {
                     />
                   </svg>
                 ),
-                title: "Kurikulum Berkualitas",
+                title: "Mapel",
                 description:
-                  "Kurikulum terintegrasi yang menyenangkan dan sesuai perkembangan anak",
+                  "Calistung, Kegiatan Keagamaan, Baca Iqro, Praktek Sholat",
               },
               {
                 icon: (
@@ -163,9 +169,8 @@ const Beranda = () => {
                     />
                   </svg>
                 ),
-                title: "Guru Berpengalaman",
-                description:
-                  "Tenaga pendidik profesional dan penuh kasih sayang",
+                title: "Akreditasi",
+                description: "Tk dengan akreditas B",
               },
               {
                 icon: (
@@ -183,9 +188,8 @@ const Beranda = () => {
                     />
                   </svg>
                 ),
-                title: "Fasilitas Lengkap",
-                description:
-                  "Lingkungan belajar yang aman, nyaman, dan menyenangkan",
+                title: "Fasilitas",
+                description: "Gedung milik sendiri, Ruangan AC",
               },
             ].map((item, index) => (
               <div
