@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">TK An-Nisa</h3>
+            <h3 className="text-xl font-bold mb-4">TK Islam An-Nisa</h3>
             <p className="mb-4">
               Menjadi taman bermain dan belajar yang menyenangkan dan terpercaya
               serta membentuk generasi islami sejak dini.
@@ -182,7 +182,8 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p>
-            &copy; {new Date().getFullYear()} TK An-Nisa. All rights reserved.
+            &copy; {new Date().getFullYear()} TK Islam An-Nisa. All rights
+            reserved.
           </p>
         </div>
       </div>

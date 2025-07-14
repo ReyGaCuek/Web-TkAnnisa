@@ -24,7 +24,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
               alt="Logo"
               // className="w-8 h-8" // Ukuran logo (responsif dan proporsional)
             />
-            TK AN-NISA
+            TK ISLAM AN-NISA
           </NavLink>
 
           <div

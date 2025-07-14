@@ -122,7 +122,7 @@ const Galeri = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-blue-700 mb-4">
-            Galeri Kegiatan <br /> TK An-Nisa
+            Galeri Kegiatan <br /> TK Islam An-Nisa
           </h2>
           <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto">
             Dokumentasi momen-momen seru dan berharga di TK kami
