@@ -12,7 +12,8 @@ const Beranda = () => {
         <div className="absolute inset-0 flex items-center justify-center bg-black/30">
           <div className="text-center text-white max-w-4xl px-4">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Selamat Datang di <br />TK ISLAM AN-NISA
+              Selamat Datang di <br />
+              TK ISLAM AN-NISA
             </h1>
             <p className="text-lg md:text-xl mb-8">
               Membentuk generasi cerdas, kreatif, dan berakhlak mulia sejak dini
@@ -128,7 +129,9 @@ const Beranda = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-purple-800 mb-12">
-            Mengapa Memilih TK ISLAM AN-NISA?
+            Mengapa Memilih
+            <br />
+            TK ISLAM AN-NISA?
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
