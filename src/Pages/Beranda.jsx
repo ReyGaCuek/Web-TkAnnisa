@@ -12,7 +12,7 @@ const Beranda = () => {
         <div className="absolute inset-0 flex items-center justify-center bg-black/30">
           <div className="text-center text-white max-w-4xl px-4">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Selamat Datang di TK ISLAM AN-NISA
+              Selamat Datang di <br />TK ISLAM AN-NISA
             </h1>
             <p className="text-lg md:text-xl mb-8">
               Membentuk generasi cerdas, kreatif, dan berakhlak mulia sejak dini

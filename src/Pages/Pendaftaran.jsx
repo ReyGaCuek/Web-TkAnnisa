@@ -236,7 +236,7 @@ const Pendaftaran = () => {
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Ikuti langkah-langkah berikut untuk mendaftarkan putra/putri Anda di
-            TK An-Nisa
+            TK Islam An-Nisa
           </p>
         </div>
 
