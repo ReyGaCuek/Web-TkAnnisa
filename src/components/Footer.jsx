@@ -147,7 +147,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Kontak Kami</h3>
             <address className="not-italic">
               <p className="mb-2">Larangan Utara, Kota Tangerang</p>
-              <p className="mb-2">Email: tkannisa75@gmail.com </p>
+              <p className="mb-2">Email: tkislamannisa75@gmail.com </p>
               <p>WhatsApp:</p>
               <a
                 href="https://wa.me/6289681244813?text=Assalamualaikum%2C%20saya%20orang%20tua%20yang%20ingin%20mendaftarkan%20anak%20saya%20ke%20TK.%20Mohon%20informasi%20lebih%20lanjut.
